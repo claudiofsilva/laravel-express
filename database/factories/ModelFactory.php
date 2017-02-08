@@ -26,3 +26,9 @@ $factory->define('App\Models\Post', function (Faker\Generator $faker) {
         'content' => $faker->paragraph
     ];
 });
+
+$factory->define('App\Models\Tag', function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word
+    ];
+});
