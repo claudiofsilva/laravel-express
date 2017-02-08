@@ -17,3 +17,4 @@ Route::get('/post', 'PostController@index');
 
 Route::get('teste/{nome}', 'TesteController@index');
 Route::get('notas/', 'TesteController@notas');
+Route::get('/testeposte', 'TesteController@post');

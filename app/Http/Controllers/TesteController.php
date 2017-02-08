@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 
 class TesteController extends Controller
 {
@@ -26,5 +27,13 @@ class TesteController extends Controller
         ];
 
         return view('teste.notas',compact('notas'));
+    }
+
+    public function post() {
+
+        $posts = Post::all();
+
+        return view('teste.post', compact('posts'));
+
     }
 }
